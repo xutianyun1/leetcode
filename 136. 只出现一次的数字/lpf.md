@@ -18,15 +18,15 @@
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 
-class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
-        only_list = []
-        for s in nums:
-            if s not in only_list:
-                only_list.append(s)
-            else:
-                only_list.remove(s)
-        return only_list[0]
+    class Solution:
+        def singleNumber(self, nums: List[int]) -> int:
+            only_list = []
+            for s in nums:
+                if s not in only_list:
+                    only_list.append(s)
+                else:
+                    only_list.remove(s)
+            return only_list[0]
 
 
 
